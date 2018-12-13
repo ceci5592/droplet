@@ -190,6 +190,22 @@
 
   /* --------------- DROPDOWN MENU ----------------------------- */
 
+  #myNav {
+
+      display: none;
+
+  }
+
+  #underNav {
+
+      display: none;
+
+  }
+
+  .fil {
+
+      display: block;
+  }
 
   .dropbtn {
 
@@ -221,7 +237,6 @@
       box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.2);
       z-index: 1;
 
-  }
 
   }
 
@@ -452,7 +467,7 @@
 
       }
 
-      #underNav li a {
+      #underNav li p {
 
           display: inline-block;
           color: darkgrey;
@@ -463,11 +478,12 @@
 
       }
 
-      #underNav li a:hover {
+      #underNav li p:hover {
 
           display: inline-block;
           color: black;
           font-size: 1.2em;
+          cursor: pointer;
 
       }
 
