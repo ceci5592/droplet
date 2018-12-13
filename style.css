@@ -223,14 +223,6 @@
 
   }
 
-
-  .logo {
-
-      width: 17vw;
-      height: 17vw;
-      position: absolute;
-      left: 4vw;
-
   }
 
   .cart {
@@ -664,6 +656,8 @@
           position: relative;
           margin: 0;
           padding: 3vw;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
       }
 
       .footer_box p {
@@ -673,11 +667,13 @@
 
       .footer_box img {
           width: 3.5vw;
-          left: 75vw;
-          bottom: 8.5vw;
+          left: 30vw;
+          bottom: -2.5vw;
           padding: .5vw;
           position: relative;
       }
+
+
 
       /* ---------------SINGLEVIEW---------------------------- */
 
