@@ -399,6 +399,24 @@
 
   }
 
+  /* ---------------VIDEO---------------------------- */
+
+  .content {
+      padding: 10vw;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+  }
+
+  .content iframe {
+      width: 80vw;
+      height: 45vw;
+  }
+
+  .content #beskrivelse {
+      padding-left: 2.1vw;
+      line-height: 6vw;
+  }
+
   /* ---------------CONTACT---------------------------- */
 
   .contact {
