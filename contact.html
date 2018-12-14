@@ -38,54 +38,66 @@
             <a href="contact.html">Contact</a>
 
         </div>
-    </div>
 
-    <div class="drop">
+        <div class="dropdown" id="drop_2">
 
-        <button onclick="filterToggle()" class="fil">Filter</button>
+            <button onclick="myDropMenu()" class="dropbtn">Menu</button>
 
-        <div id="content-drop">
+            <a href="cart.html"><img src="Basket1.png" alt="cart icon" class="cart"> </a>
 
-            <p class="product-item" data-kategori="alle">All</p>
+            <div id="myDropdown" class="dropdown-content">
 
-            <p class="product-item" data-kategori="Posters">Posters</p>
-
-            <p class="product-item" data-kategori="Mugs">Mugs</p>
-
-            <p class="product-item" data-kategori="Tote Bag">Tote Bags</p>
-
-            <p class="product-item" data-kategori="T-shirts">T-Shirts</p>
-
-            <p class="product-item" data-kategori="Sweatshirts">Sweatshirts</p>
-
-            <p class="product-item" data-kategori="Covers">Covers</p>
-
-        </div>
-    </div>
-
-    <!--Templaten skal være her	-->
-    <section class="container">
-
-    </section>
-
-    <template data-template>
-
-        <article class="postListview">
-
-            <div id="template_container">
-
-                <img data-img id="template_img">
-                <p data-title id="template_name"></p>
-                <p data-price id="template_price"></p>
-                <p data-type id="template_type"></p>
-                <img data-img id="template_img">
+                <a href="index.html">Home</a>
+                <a href="products.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
 
             </div>
 
-        </article>
+        </div>
 
+        <div id="myNav" class="nav-content">
+            <ul>
+                <li> <a href="index.html">HOME</a> </li>
+                <li> <a href="products.html">SHOP</a> </li>
+                <li> <a href="about.html">ABOUT</a> </li>
+                <li> <a href="contact.html">CONTACT</a> </li>
+            </ul>
+        </div>
+    </div>
 
-    </template>
+    <div class="contact">
+        <form action="action_page.php">
+
+            <label for="fname">Full name</label><br>
+            <input type="text" id="fname" name="name" placeholder="Enter full name"><br>
+
+            <label for="lname">Email</label><br>
+            <input type="text" id="lname" name="email" placeholder="Enter Email"><br>
+
+            <label for="country">Country</label><br>
+            <select id="country" name="country">
+                <option value="choose country">Choose Country</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="denmark">Denmark</option>
+                <option value="germany">Germany</option>
+                <option value="france">France</option>
+                <option value="norway">Norway</option>
+                <option value="spain">Spain</option>
+                <option value="sweden">Sweden</option>
+                <option value="uk">UK</option>
+                <option value="usa">USA</option>
+            </select>
+
+            <label for="subject"></label>
+            <textarea id="subject" name="subject" placeholder="What can we help you with?" style="height:200px"></textarea><br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+
 
     <div class="footer_box">
         <div class="text">
@@ -102,7 +114,6 @@
             </a>
         </div>
     </div>
-
 
     <script src="javascript.js"></script>
 

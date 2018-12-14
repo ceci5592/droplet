@@ -747,5 +747,74 @@
           line-height: 3vw;
       }
 
+      /* ---------------CONTACT---------------------------- */
+
+      .contact {
+          padding: 10vw;
+          padding-top: 7vw;
+          padding-left: 33vw;
+          font-family: 'open sans', sans-serif;
+      }
+
+      .contact input::placeholder {
+          font-size: 1.1em;
+          font-family: 'open sans', sans-serif;
+      }
+
+      .contact select {
+          font-size: .7em;
+          font-family: 'open sans', sans-serif;
+      }
+
+      .contact textarea::placeholder {
+          font-size: 1.2em;
+          font-family: 'open sans', sans-serif;
+      }
+
+      .contact input[type=text] {
+          width: 60%;
+          padding: 10px;
+          border: 2px solid var(--pink);
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+      }
+
+      .contact select {
+          width: 60%;
+          padding: 10px;
+          border: 2px solid var(--pink);
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+      }
+
+      .contact textarea {
+          width: 60%;
+          padding: 10px;
+          border: 2px solid var(--pink);
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical
+      }
+
+      .contact input[type=submit] {
+          background-color: var(--pink);
+          font-family: 'open sans', sans-serif;
+          font-size: .9em;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+      }
+
+      input[type=submit]:hover {
+          background-color: var(--light-blue);
+      }
 
   }
