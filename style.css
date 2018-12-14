@@ -630,13 +630,34 @@
           grid-template-columns: repeat(1, 1fr);
           width: 100vw;
           text-align: center;
+      }
 
+      .content_home #billeder {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
       }
 
       .content_home img {
-          width: 55%;
-          margin-bottom: 7vw;
+          width: 90%;
+          margin-bottom: 7.5vw;
           margin-top: -4vw;
+      }
+
+      .box_1 {
+          padding-left: 8vw;
+      }
+
+      .box_2 {
+          padding-right: 8vw;
+      }
+
+      .box_3 {
+          padding-left: 8vw;
+      }
+
+      .box_video {
+          padding-right: 8vw;
       }
 
       .box_4 {
