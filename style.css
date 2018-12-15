@@ -344,26 +344,20 @@
   /* --------------- CART PAGE ----------------------------- */
 
   #form_content {
-
       margin-left: 13vw;
       margin-right: 13vw;
   }
 
   #form_content h2 {
-
-      font-family: sans-serif;
+      font-family: 'open sans', sans-serif;
   }
 
   form {
-
-      font-family: sans-serif;
       padding-bottom: 3vw;
-
-
+      font-family: 'open sans', sans-serif;
   }
 
   input[type=text] {
-
       width: 60vw;
       height: 6vw;
       margin-bottom: 5vw;
@@ -925,6 +919,29 @@
 
       input[type=submit]:hover {
           background-color: var(--light-blue);
+      }
+
+      /* --------------- CART PAGE ----------------------------- */
+
+      #form_content {
+          margin-left: 13vw;
+          margin-right: 13vw;
+      }
+
+      #form_content h2 {
+          font-family: 'open sans', sans-serif;
+      }
+
+      form {
+          padding-bottom: 3vw;
+          font-family: 'open sans', sans-serif;
+      }
+
+      input[type=text] {
+          width: 40vw;
+          height: 3vw;
+          margin-bottom: 2vw;
+          margin-top: 1vw;
       }
 
   }
