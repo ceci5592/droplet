@@ -404,12 +404,13 @@
   .content {
       padding: 10vw;
       display: grid;
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: 1fr;
   }
 
   .content iframe {
       width: 80vw;
       height: 45vw;
+      padding-bottom: 5vw;
   }
 
   .content #beskrivelse {
