@@ -120,11 +120,23 @@
 
   }
 
-
   .content_home img {
 
       width: 70%;
       margin-bottom: 5vw;
+  }
+
+  .box_video {
+      width: 70%;
+      margin-bottom: 5vw;
+  }
+
+  .content_home video {
+      width: 103%;
+      height: 62vw;
+      margin-top: -10.5vw;
+      padding-left: 14vw;
+      padding-right: 14vw;
   }
 
   .box_4 {
@@ -671,6 +683,13 @@
 
       .box_video {
           padding-right: 8vw;
+      }
+
+      .content_home video {
+          width: 90%;
+          height: 35.5vw;
+          margin-bottom: 7.5vw;
+          margin-top: -11.2vw;
       }
 
       .box_4 {
