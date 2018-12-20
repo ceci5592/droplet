@@ -2,16 +2,32 @@
 <html lang="da">
 
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DROPLET Home</title>
-    <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand|Oswald" rel="stylesheet">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DROPLET Products</title>
+    <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand|Oswald" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
-
     <div class="banner_1">
         <p>DROPLET</p>
     </div>
@@ -24,28 +40,30 @@
         <p>SHOP NEW PRINTS AND ORIGINALS</p>
     </div>
 
-    <div class="dropdown">
+    <a href="index.html">
+        <div class="locologomini">
+            <img src="droplet_uden_baggrund.png" alt="logo droplet mobile">
+        </div>
+    </a>
 
+    <div class="dropdown">
         <button onclick="myDropMenu()" class="dropbtn">Menu</button>
 
-        <a href="cart.html"><img src="Basket1.png" alt="cart icon" class="cart"> </a>
+        <a href="cart.html?" id="cart">
+            <img src="Basket1.png" alt="cart icon" class="cart" />
+            <div id="cart-number"></div>
+        </a>
 
         <div id="myDropdown" class="dropdown-content">
-
-            <a href="index.html">Home</a>
-            <a href="products.html">Shop</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-
+            <a href="index.html">Home</a> <a href="products.html">Shop</a>
+            <a href="about.html">About</a> <a href="contact.html">Contact</a>
         </div>
     </div>
 
     <div class="drop">
-
         <button onclick="filterToggle()" class="fil">Filter</button>
 
         <div id="content-drop">
-
             <p class="product-item" data-kategori="alle">All</p>
 
             <p class="product-item" data-kategori="Posters">Posters</p>
@@ -59,24 +77,30 @@
             <p class="product-item" data-kategori="Sweatshirts">Sweatshirts</p>
 
             <p class="product-item" data-kategori="Covers">Covers</p>
-
         </div>
     </div>
 
-
     <div id="myNav" class="nav-content">
+
         <ul>
-            <li> <a href="index.html">HOME</a> </li>
-            <li> <a href="products.html">SHOP</a> </li>
-            <li> <a href="about.html">ABOUT</a> </li>
-            <li> <a href="contact.html">CONTACT</a> </li>
+
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="products.html">SHOP</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+
         </ul>
+
     </div>
 
+    <a href="index.html">
+        <div class="locologo">
+            <img src="sort.png" alt="logo droplet desktop">
+        </div>
+    </a>
+
     <div id="underNav">
-
         <ul>
-
             <li class="product-item" data-kategori="alle">
                 <p>All</p>
             </li>
@@ -104,34 +128,23 @@
             <li class="product-item" data-kategori="Covers">
                 <p>Covers</p>
             </li>
-
         </ul>
-
     </div>
 
 
-    <!--Templaten skal være her	-->
-    <section class="container">
-
-    </section>
+    <!-- Templaten skal være her -->
+    <section class="container"></section>
 
     <template data-template>
-
         <article class="postListview">
-
             <div id="template_container">
-
-                <img data-img id="template_img">
+                <img data-img id="template_img" />
                 <p data-title id="template_name"></p>
                 <p data-price id="template_price"></p>
                 <p data-type id="template_type"></p>
-                <img data-img id="template_img">
-
+                <button data-id="template_id" id="template_id">Add to basket</button>
             </div>
-
         </article>
-
-
     </template>
 
     <div class="footer_box">
@@ -145,7 +158,7 @@
         <div class="newsletter">
             <p> Newsletter </p>
 
-            <p class="news"> Sign up to our newsletter here!</p>
+            <p class="news"> Sign up and treat your inbox!</p>
 
             <input type="text" class="newname" placeholder="Enter e-mail adress"><br>
 
@@ -161,11 +174,12 @@
                 <img src="Facebook.png" alt="facebook">
             </a>
         </div>
+
+        <div class="signature">
+            <img src="Asset%201.png" alt="droplet signature">
+        </div>
     </div>
-
-
     <script src="javascript.js"></script>
-
 </body>
 
 </html>

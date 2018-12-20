@@ -1,994 +1,1265 @@
-  :root {
-
-      --yellow: #d9cb24;
-      --dark-blue: #242771;
-      --red: #813C38;
-      --pink: #BBA2c2;
-      --light-blue: #77B3CD;
-  }
-
-  html {
-
-      margin: 0;
-  }
-
-
-  body {
-
-      margin: 0;
-  }
-
-  p {
-
-      font-family: 'open sans', sans-serif;
-      margin: 0;
-      padding: 0;
-  }
-
-  /* --------------- BANNER ------------------------ */
-
-  .banner_1 {
-
-      width: 100%;
-      height: 8vw;
-      background-color: black;
-      color: var(--yellow);
-      text-align: center;
-      position: relative;
-      padding-top: 3vw;
-      display: none;
-      margin: 0;
-      padding-bottom: 2vw;
-  }
-
-  .banner_2 {
-
-      width: 100%;
-      height: 8vw;
-      background-color: black;
-      color: var(--pink);
-      text-align: center;
-      position: relative;
-      padding-top: 3vw;
-      display: none;
-      margin: 0;
-      padding-bottom: 2vw;
-
-
-
-  }
-
-  .banner_3 {
-
-      width: 100%;
-      height: 8vw;
-      background-color: black;
-      color: var(--light-blue);
-      text-align: center;
-      position: relative;
-      padding-top: 3vw;
-      display: none;
-      margin: 0;
-      padding-bottom: 2vw;
-
-
-
-  }
-
-  /* --------------- PRODUCTS ---------------------- */
-
-  .container {
-
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      margin: 3vw;
-      font-size: .8em;
-
-  }
-
-
-  #template_img {
-
-      width: 100%;
-
-  }
-
-  #template_name {
-
-      font-size: 1em;
-      font-weight: bold;
-      font-family: 'open sans', sans-serif;
-      padding-bottom: 1vw;
-
-  }
-
-  #template_price {
-
-      padding-bottom: 1vw;
-
-  }
-
-
-  /* --------------- HOME PAGE ---------------- */
-
-  .content_home {
-
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      width: 100vw;
-      text-align: center;
-
-  }
-
-  .content_home img {
-
-      width: 70%;
-      margin-bottom: 5vw;
-  }
-
-  .box_video {
-      width: 70%;
-      margin-bottom: 5vw;
-  }
-
-  .content_home video {
-      width: 103%;
-      height: 62vw;
-      margin-top: -10.5vw;
-      padding-left: 14vw;
-      padding-right: 14vw;
-  }
-
-  .box_4 {
-
-      width: 100vw;
-      height: 50vw;
-      background-color: var(--dark-blue);
-
-  }
-
-  .box_4 h2 {
-
-      color: var(--pink);
-      font-family: 'nosifer', sans-serif;
-
-  }
-
-  .box_4 p {
-
-      color: white;
-      font-family: 'open sans', sans-serif;
-      margin-left: 5vw;
-      margin-right: 5vw;
-      padding: 5vw;
-      line-height: 6vw;
-
-  }
-
-  .code {
-
-      color: var(--yellow);
-  }
-
-  .box_5 {
-
-      background-color: var(--red);
-      font-family: 'open sans', sans-serif;
-      width: 100vw;
-      height: 50vw;
-
-  }
-
-  .box_5 h2 {
-
-      color: white;
-      font-family: 'open sans', sans-serif;
-      font-weight: bold;
-      margin-left: 5vw;
-      margin-right: 5vw;
-  }
-
-  .box_5 p {
-
-      color: white;
-      font-family: 'open sans', sans-serif;
-      margin-left: 5vw;
-      margin-right: 5vw;
-      line-height: 6vw;
-
-  }
-
-
-
-  /* --------------- DROPDOWN MENU ----------------------------- */
-
-  #myNav {
-
-      display: none;
-
-  }
-
-  #underNav {
-
-      display: none;
-
-  }
-
-  .fil {
-
-      display: block;
-  }
-
-  .dropbtn {
-
-      background-color: white;
-      font-weight: bold;
-      color: black;
-      padding: 18px;
-      font-size: 1.9em;
-      border: none;
-      cursor: pointer;
-      font-family: 'nosifer', cursive;
-  }
-
-
-  /* The container <div> - needed to position the dropdown content */
-
-  .dropdown {
-      position: relative;
-      text-align: center;
-
-  }
-
-  /* Dropdown Content (Hidden by Default) */
-
-  .dropdown-content {
-      display: none;
-      text-align: center;
-      min-width: 10vw;
-      box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.2);
-      z-index: 1;
-
-
-  }
-
-  .cart {
-
-      width: 10vw;
-      height: 10vw;
-      position: absolute;
-      right: 8vw;
-      top: 6vw;
-  }
-
-  /* Links inside the dropdown */
-  .dropdown-content a {
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-      font-size: 1em;
-      font-family: 'open sans', sans-serif;
-
-  }
-
-  .show {
-      display: block;
-  }
-
-  .drop {
-
-      position: relative;
-
-
-  }
-
-  .drop button {
-
-      position: relative;
-      left: 31vw;
-      width: 34vw;
-      height: 8vw;
-      font-size: 1em;
-      border: none;
-      box-shadow: none;
-      cursor: pointer;
-      background-color: black;
-      color: white;
-  }
-
-  #content-drop {
-      position: relative;
-      left: 31vw;
-      margin: 0;
-      padding: 0;
-      width: 30vw;
-      padding: 2vw;
-      text-align: center;
-      display: none;
-  }
-
-  .product-item {
-
-      padding: 1vw;
-  }
-
-
-  /* --------------- MAIN INDHOLD ----------------------------- */
-
-  .container {
-
-      display: grid;
-      grid-gap: 2vw;
-
-  }
-
-  /* ---------------SINGLEVIEW---------------------------- */
-
-  #single {
-
-      margin: 10vw;
-  }
-
-  #single img {
-
-      width: 80vw;
-      margin-bottom: 3vw;
-      margin-top: 3vw;
-
-  }
-
-  #single #template_price {
-
-      font-weight: bold;
-      color: var(--pink);
-
-  }
-
-  #template_desc {
-
-      margin-top: 5vw;
-      margin-bottom: 4vw;
-      line-height: 8vw;
-
-  }
-
-  /* --------------- CART PAGE ----------------------------- */
-
-  #form_content {
-      margin-left: 13vw;
-      margin-right: 13vw;
-  }
-
-  #form_content h2 {
-      font-family: 'open sans', sans-serif;
-  }
-
-  form {
-      padding-bottom: 3vw;
-      font-family: 'open sans', sans-serif;
-  }
-
-  input[type=text] {
-      width: 60vw;
-      height: 6vw;
-      margin-bottom: 5vw;
-      margin-top: 2vw;
-  }
-
-  /* --------------- FOOTER -------------------- */
-
-  .footer_box {
-
-      width: 100%;
-      height: 35vw;
-      background-color: black;
-      position: relative;
-      margin: 0;
-      padding: 3vw;
-
-
-  }
-
-  .footer_box p {
-
-      color: white;
-      padding: 1vw;
-  }
-
-  .footer_box img {
-
-      width: 8vw;
-      left: 70vw;
-      bottom: 12vw;
-      position: relative;
-
-  }
-
-  /* ---------------VIDEO---------------------------- */
-
-  .content {
-      padding: 10vw;
-      display: grid;
-      grid-template-rows: 1fr;
-  }
-
-  .content iframe {
-      width: 80vw;
-      height: 45vw;
-      padding-bottom: 5vw;
-  }
-
-  .content #beskrivelse {
-      padding-left: 2.1vw;
-      line-height: 6vw;
-  }
-
-  /* ---------------CONTACT---------------------------- */
-
-  .contact {
-      padding: 10vw;
-      padding-top: 7vw;
-      padding-left: 14vw;
-      font-family: 'open sans', sans-serif;
-  }
-
-  .contact input::placeholder {
-      font-size: 1.1em;
-      font-family: 'open sans', sans-serif;
-  }
-
-  .contact select {
-      font-size: .7em;
-      font-family: 'open sans', sans-serif;
-  }
-
-  .contact textarea::placeholder {
-      font-size: 1.2em;
-      font-family: 'open sans', sans-serif;
-  }
-
-  .contact input[type=text] {
-      width: 100%;
-      padding: 10px;
-      border: 2px solid var(--pink);
-      border-radius: 4px;
-      box-sizing: border-box;
-      margin-top: 6px;
-      margin-bottom: 16px;
-  }
-
-  .contact select {
-      width: 100%;
-      padding: 10px;
-      border: 2px solid var(--pink);
-      border-radius: 4px;
-      box-sizing: border-box;
-      margin-top: 6px;
-      margin-bottom: 16px;
-  }
-
-  .contact textarea {
-      width: 100%;
-      padding: 10px;
-      border: 2px solid var(--pink);
-      border-radius: 4px;
-      box-sizing: border-box;
-      margin-top: 6px;
-      margin-bottom: 16px;
-      resize: vertical
-  }
-
-  .contact input[type=submit] {
-      background-color: var(--pink);
-      font-family: 'open sans', sans-serif;
-      font-size: .9em;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-  }
-
-  input[type=submit]:hover {
-      background-color: var(--light-blue);
-  }
-
-
-  /*--------DESKTOP VERSION---------------------*/
-
-  @media screen and (min-width: 1000px) {
-
-      /* ---------------VERTICAL MENU---------------------------- */
-
-      #myNav {
-
-          display: block;
-
-      }
-
-      #underNav {
-
-          display: block;
-
-      }
-
-      #myNav ul {
-
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          text-align: center;
-
-      }
-
-      #myNav li {
-          display: inline;
-
-      }
-
-      #myNav li a {
-          display: inline-block;
-          color: black;
-          padding: 1vw;
-          margin-top: 1vw;
-          font-size: 1.4em;
-          font-family: 'Quicksand', sans-serif;
-          text-decoration: none;
-
-
-      }
-
-      #myNav li a:hover {
-          display: inline-block;
-          color: var(--yellow);
-
-      }
-
-      #underNav ul {
-
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          text-align: center;
-
-
-      }
-
-      #underNav li {
-          display: inline;
-
-      }
-
-      #underNav li p {
-
-          display: inline-block;
-          color: darkgrey;
-          padding-left: 1vw;
-          font-size: 1.2em;
-          font-family: 'Oswald', sans-serif;
-          text-decoration: none;
-
-      }
-
-      #underNav li p:hover {
-
-          display: inline-block;
-          color: black;
-          font-size: 1.2em;
-          cursor: pointer;
-
-      }
-
-      /* --------------- BANNER ------------------------ */
-
-      .banner_1 {
-          width: 100%;
-          height: 0.5vw;
-          background-color: black;
-          color: var(--yellow);
-          text-align: center;
-          position: relative;
-          padding-top: 1vw;
-          display: none;
-          margin: 0;
-          padding-bottom: 2vw;
-      }
-
-      .banner_2 {
-          width: 100%;
-          height: 0.5vw;
-          background-color: black;
-          color: var(--pink);
-          text-align: center;
-          position: relative;
-          padding-top: 1vw;
-          display: none;
-          margin: 0;
-          padding-bottom: 2vw;
-
-      }
-
-      .banner_3 {
-          width: 100%;
-          height: 0.5vw;
-          background-color: black;
-          color: var(--light-blue);
-          text-align: center;
-          position: relative;
-          padding-top: 1vw;
-          display: none;
-          margin: 0;
-          padding-bottom: 2vw;
-      }
-
-      /* --------------- PRODUCTS ---------------------- */
-
-      .container {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          margin: 6vw;
-          font-size: .9em;
-      }
-
-      #template_img {
-          width: 95%;
-      }
-
-      #template_name {
-          font-size: 1.1em;
-          font-weight: bold;
-          font-family: 'open sans', sans-serif;
-          padding-bottom: 1vw;
-      }
-
-      #template_price {
-          padding-bottom: 1vw;
-      }
-
-      /* --------------- HOME PAGE ---------------- */
-
-      .content_home {
-          display: grid;
-          grid-template-columns: repeat(1, 1fr);
-          width: 100vw;
-          text-align: center;
-      }
-
-      .content_home #billeder {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          grid-template-rows: 1fr 1fr;
-      }
-
-      .content_home img {
-          width: 90%;
-          margin-bottom: 7.5vw;
-          margin-top: -4vw;
-      }
-
-      .box_1 {
-          padding-left: 8vw;
-      }
-
-      .box_2 {
-          padding-right: 8vw;
-      }
-
-      .box_3 {
-          padding-left: 8vw;
-      }
-
-      .box_video {
-          padding-right: 8vw;
-      }
-
-      .content_home video {
-          width: 90%;
-          height: 35.5vw;
-          margin-bottom: 7.5vw;
-          margin-top: -11.2vw;
-      }
-
-      .box_4 {
-          width: 100vw;
-          height: 15vw;
-          background-color: var(--dark-blue);
-      }
-
-      .box_4 h2 {
-          color: var(--pink);
-          font-family: 'nosifer', sans-serif;
-      }
-
-      .box_4 p {
-          color: white;
-          font-family: 'open sans', sans-serif;
-          margin-left: 5vw;
-          margin-right: 5vw;
-          padding-top: 0.1vw;
-          line-height: 6vw;
-      }
-
-      .code {
-          color: var(--yellow);
-      }
-
-      .box_5 {
-          background-color: var(--red);
-          font-family: 'open sans', sans-serif;
-          width: 100vw;
-          height: 15vw;
-      }
-
-      .box_5 h2 {
-          color: white;
-          font-family: 'open sans', sans-serif;
-          font-weight: bold;
-          margin-left: 5vw;
-          margin-right: 5vw;
-      }
-
-      .box_5 p {
-          color: white;
-          font-family: 'open sans', sans-serif;
-          margin-left: 5vw;
-          margin-right: 5vw;
-          line-height: 6vw;
-      }
-
-      /* --------------- DROPDOWN MENU ----------------------------- */
-
-      .drop {
-
-          display: none;
-      }
-
-      .dropbtn {
-          background-color: white;
-          font-weight: bold;
-          color: black;
-          padding: 18px;
-          font-size: 2.5em;
-          border: none;
-          cursor: pointer;
-          font-family: 'nosifer', cursive;
-      }
-
-      /* The container <div> - needed to position the dropdown content */
-
-      .dropdown {
-          position: relative;
-          text-align: center;
-      }
-
-      /* Dropdown Content (Hidden by Default) */
-
-      .dropbtn {
-
-          display: none;
-      }
-
-      .cart {
-          width: 5vw;
-          height: 5vw;
-          position: absolute;
-          right: 4.5vw;
-          top: 1.5vw;
-      }
-
-
-      .product-item {
-          padding: 1vw;
-      }
-
-
-
-      /* --------------- FOOTER -------------------- */
-
-      .footer_box {
-          width: 100%;
-          height: 100%;
-          padding-left: 19vw;
-          background-color: black;
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr 1fr;
-
-      }
-
-      .newsletter input[type=text] {
-          width: 18vw;
-          height: 2vw;
-
-      }
-
-      .footer_box p {
-          color: white;
-          padding: .4vw;
-          font-weight: bold;
-      }
-
-      .footer_box .news {
-          color: white;
-          padding: .3vw;
-          font-weight: normal;
-      }
-
-
-      .footer_box img {
-          width: 2.5vw;
-          left: 2vw;
-          bottom: 0vw;
-          padding: .5vw;
-          position: relative;
-      }
-
-      .newsletter input[type=submit] {
-          background-color: var(--pink);
-          font-family: 'open sans', sans-serif;
-          font-size: .9em;
-          color: white;
-          padding: 12px 20px;
-          border: none;
-          border-radius: 4px;
-          cursor: pointer;
-      }
-
-      input[type=submit]:hover {
-          background-color: var(--light-blue);
-      }
-
-
-
-      /* ---------------SINGLEVIEW---------------------------- */
-
-      #single {
-          margin: 22vw;
-          margin-top: -5vw;
-          margin-bottom: 10vw;
-      }
-
-      #single img {
-          width: 55vw;
-          margin-bottom: 1vw;
-          margin-top: 1vw;
-      }
-
-      #single #template_price {
-          font-weight: bold;
-          font-size: 1.2em;
-          color: var(--pink);
-      }
-
-      #single #template_name {
-          font-size: 1.3em;
-      }
-
-      #single #template_colour {
-          font-size: 1em;
-      }
-
-      #single #template_size {
-          font-size: 1em;
-      }
-
-      #template_desc {
-          margin-top: 3vw;
-          margin-bottom: 3vw;
-          line-height: 2.5vw;
-      }
-
-      /* ---------------VIDEO---------------------------- */
-
-      .content {
-          padding: 10vw;
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-      }
-
-      .content iframe {
-          width: 45vw;
-          height: 30vw;
-      }
-
-      .content #beskrivelse {
-          padding-left: 2.1vw;
-          line-height: 3vw;
-      }
-
-      /* ---------------CONTACT---------------------------- */
-
-      .contact {
-          padding: 10vw;
-          padding-top: 7vw;
-          padding-left: 33vw;
-          font-family: 'open sans', sans-serif;
-      }
-
-      .contact input::placeholder {
-          font-size: 1.1em;
-          font-family: 'open sans', sans-serif;
-      }
-
-      .contact select {
-          font-size: .7em;
-          font-family: 'open sans', sans-serif;
-      }
-
-      .contact textarea::placeholder {
-          font-size: 1.2em;
-          font-family: 'open sans', sans-serif;
-      }
-
-      .contact input[type=text] {
-          width: 60%;
-          padding: 10px;
-          border: 2px solid var(--pink);
-          border-radius: 4px;
-          box-sizing: border-box;
-          margin-top: 6px;
-          margin-bottom: 16px;
-      }
-
-      .contact select {
-          width: 60%;
-          padding: 10px;
-          border: 2px solid var(--pink);
-          border-radius: 4px;
-          box-sizing: border-box;
-          margin-top: 6px;
-          margin-bottom: 16px;
-      }
-
-      .contact textarea {
-          width: 60%;
-          padding: 10px;
-          border: 2px solid var(--pink);
-          border-radius: 4px;
-          box-sizing: border-box;
-          margin-top: 6px;
-          margin-bottom: 16px;
-          resize: vertical
-      }
-
-      .contact input[type=submit] {
-          background-color: var(--pink);
-          font-family: 'open sans', sans-serif;
-          font-size: .9em;
-          color: white;
-          padding: 12px 20px;
-          border: none;
-          border-radius: 4px;
-          cursor: pointer;
-      }
-
-      input[type=submit]:hover {
-          background-color: var(--light-blue);
-      }
-
-      /* --------------- CART PAGE ----------------------------- */
-
-      #form_content {
-          margin-left: 13vw;
-          margin-right: 13vw;
-      }
-
-      #form_content h2 {
-          font-family: 'open sans', sans-serif;
-      }
-
-      form {
-          padding-bottom: 3vw;
-          font-family: 'open sans', sans-serif;
-      }
-
-      input[type=text] {
-          width: 40vw;
-          height: 3vw;
-          margin-bottom: 2vw;
-          margin-top: 1vw;
-      }
-
-  }
+:root {
+    --yellow: #d9cb24;
+    --dark-blue: #242771;
+    --red: #813c38;
+    --pink: #bba2c2;
+    --light-blue: #77b3cd;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: "open sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------- BANNER ------------------------ */
+
+.banner_1 {
+    width: 100%;
+    height: 8vw;
+    background-color: black;
+    color: var(--yellow);
+    text-align: center;
+    position: relative;
+    padding-top: 3vw;
+    display: none;
+    margin: 0;
+    padding-bottom: 2vw;
+}
+
+.banner_2 {
+    width: 100%;
+    height: 8vw;
+    background-color: black;
+    color: var(--pink);
+    text-align: center;
+    position: relative;
+    padding-top: 3vw;
+    display: none;
+    margin: 0;
+    padding-bottom: 2vw;
+}
+
+.banner_3 {
+    width: 100%;
+    height: 8vw;
+    background-color: black;
+    color: var(--light-blue);
+    text-align: center;
+    position: relative;
+    padding-top: 3vw;
+    display: none;
+    margin: 0;
+    padding-bottom: 2vw;
+}
+
+/* --------------- PRODUCTS ---------------------- */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 3vw;
+    font-size: 0.8em;
+}
+
+#template_img {
+    width: 100%;
+}
+
+#template_name {
+    font-size: .8em;
+    font-weight: bold;
+    font-family: "open sans", sans-serif;
+    padding-bottom: 1vw;
+}
+
+
+
+#template_id {
+
+    width: 100%;
+    text-align: center;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+    height: 8vw;
+    font-size: 1.2em;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+
+}
+
+.cart,
+#cart-number {
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    right: 4.5vw;
+    top: 1.5vw;
+}
+
+#cart-number {
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    top: 11vw;
+    right: 12vw;
+    width: 30px;
+    height: 30px;
+    background: black;
+    border-radius: 100%;
+    font-family: sans-serif;
+    color: white;
+}
+
+
+/* --------------- HOME PAGE ---------------- */
+
+.content_home {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    width: 100vw;
+    text-align: center;
+}
+
+.content_home img {
+    width: 70%;
+    margin-bottom: 5vw;
+}
+
+.content_home video {
+
+    width: 70vw;
+    margin-top: 2vw;
+    margin-bottom: 6vw;
+
+}
+
+.content_home img:hover {
+    opacity: 1;
+}
+
+.box_4 {
+    width: 100vw;
+    height: 50vw;
+    background-color: var(--dark-blue);
+}
+
+.box_4 h2 {
+    color: var(--pink);
+    font-family: "nosifer", sans-serif;
+}
+
+.box_4 p {
+    color: white;
+    font-family: "open sans", sans-serif;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding: 5vw;
+    line-height: 6vw;
+}
+
+.code {
+    color: var(--yellow);
+}
+
+.box_5 {
+    background-color: var(--red);
+    font-family: "open sans", sans-serif;
+    width: 100vw;
+    height: 50vw;
+}
+
+.box_5 h2 {
+    color: white;
+    font-family: "open sans", sans-serif;
+    font-weight: bold;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.box_5 p {
+    color: white;
+    font-family: "open sans", sans-serif;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    line-height: 6vw;
+}
+
+/* --------------- DROPDOWN MENU ----------------------------- */
+
+#myNav {
+    display: none;
+}
+
+#underNav {
+    display: none;
+}
+
+.fil {
+    display: block;
+    margin-bottom: 6vw;
+}
+
+.dropbtn {
+    background-color: white;
+    font-weight: bold;
+    color: black;
+    padding: 18px;
+    font-size: 1.9em;
+    border: none;
+    cursor: pointer;
+    font-family: "nosifer", cursive;
+    margin-bottom: 5vw;
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+    position: relative;
+    text-align: center;
+}
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    text-align: center;
+    min-width: 10vw;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.cart {
+    width: 10vw;
+    height: 10vw;
+    position: absolute;
+    right: 8vw;
+    top: 6vw;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1em;
+    font-family: "open sans", sans-serif;
+}
+
+.show {
+    display: block;
+}
+
+.drop {
+    position: relative;
+}
+
+.drop button {
+    position: relative;
+    left: 31vw;
+    width: 34vw;
+    height: 8vw;
+    font-size: 1em;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+#content-drop {
+    position: relative;
+    left: 31vw;
+    margin: 0;
+    padding: 0;
+    width: 30vw;
+    padding: 2vw;
+    text-align: center;
+    display: none;
+}
+
+.product-item {
+    padding: 1vw;
+}
+
+/* --------------- CART PAGE ----------------------------- */
+
+.locologo img {
+
+    display: none;
+}
+
+.locologomini img {
+
+    height: 12vw;
+    top: 17vw;
+    left: 3vw;
+    position: absolute;
+    z-index: 200;
+
+}
+
+.form_content {
+    padding-left: 15vw;
+    font-family: 'open sans', sans-serif;
+    margin-bottom: 6vw;
+}
+
+.form_content input::placeholder {
+    font-size: 1.1em;
+    font-family: 'open sans', sans-serif;
+}
+
+.form_content select {
+    font-size: .7em;
+    font-family: 'open sans', sans-serif;
+}
+
+.form_content textarea::placeholder {
+    font-size: 1.2em;
+    font-family: 'open sans', sans-serif;
+}
+
+.form_content input[type=text] {
+    width: 80%;
+    padding: 18px;
+    border: 2px solid var(--pink);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+.form_content select {
+    width: 60%;
+    padding: 10px;
+    border: 2px solid var(--pink);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+.form_content textarea {
+    width: 60%;
+    padding: 10px;
+    border: 2px solid var(--pink);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+.form_content input[type=submit] {
+    background-color: var(--pink);
+    font-family: 'open sans', sans-serif;
+    font-size: .9em;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* --------------- MAIN INDHOLD ----------------------------- */
+
+.container {
+    display: grid;
+    grid-gap: 2vw;
+}
+
+/* ---------------SINGLEVIEW---------------------------- */
+
+#single {
+    margin: 10vw;
+}
+
+#single img {
+    width: 80vw;
+    margin-bottom: 3vw;
+    margin-top: 3vw;
+}
+
+#single #template_price {
+    font-weight: bold;
+    color: var(--pink);
+}
+
+#template_desc {
+    margin-top: 5vw;
+    margin-bottom: 4vw;
+    line-height: 8vw;
+}
+
+/* --------------- CART PAGE ----------------------------- */
+
+#form_content {
+    margin-left: 13vw;
+    margin-right: 13vw;
+}
+
+#form_content h2 {
+    font-family: sans-serif;
+}
+
+form {
+    font-family: sans-serif;
+    padding-bottom: 3vw;
+}
+
+input[type="text"] {
+    width: 60vw;
+    height: 6vw;
+    margin-bottom: 5vw;
+    margin-top: 2vw;
+}
+
+
+/* --------------- FOOTER -------------------- */
+.footer_box {
+    width: 100vw;
+    height: 100%;
+    position: relative;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 2vw;
+    padding-bottom: 4vw;
+
+}
+
+.text {
+    padding-left: 8vw;
+    padding-bottom: 5vw;
+
+}
+
+.newsletter {
+
+    padding-left: 8vw;
+    padding-bottom: 5vw;
+}
+
+.links {
+
+    padding-left: 8vw;
+    padding-bottom: 5vw;
+}
+
+.newsletter input[type=text] {
+    width: 38vw;
+    height: 7vw;
+
+}
+
+.footer_box p {
+    color: white;
+    padding: .4vw;
+    font-weight: bold;
+}
+
+.footer_box .news {
+    color: white;
+    padding: .3vw;
+    font-weight: normal;
+}
+
+
+.footer_box img {
+    width: 9vw;
+    left: -1vw;
+    bottom: 0vw;
+    padding: 1.5vw;
+    position: relative;
+}
+
+.signature img {
+    width: 60%;
+    position: relative;
+    bottom: 2vw;
+    left: 7vw;
+    margin: 0;
+    padding: 0;
+
+}
+
+.newsletter input[type=submit] {
+    background-color: var(--pink);
+    font-family: 'open sans', sans-serif;
+    font-size: .9em;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: var(--light-blue);
+}
+
+/* ---------------VIDEO---------------------------- */
+
+.content {
+
+    padding: 5vw;
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.content iframe {
+    width: 90vw;
+    height: 100%;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    border: none;
+}
+
+.content h2 {
+
+    font-family: 'open sans', sans-serif;
+}
+
+.content #beskrivelse {
+    padding-left: 2.1vw;
+    line-height: 8vw;
+}
+
+/* ---------------CONTACT---------------------------- */
+
+.contact {
+    padding: 10vw;
+    padding-top: 7vw;
+    padding-left: 14vw;
+    font-family: 'open sans', sans-serif;
+}
+
+.contact input::placeholder {
+    font-size: 1.1em;
+    font-family: 'open sans', sans-serif;
+}
+
+.contact select {
+    font-size: .7em;
+    font-family: 'open sans', sans-serif;
+}
+
+.contact textarea::placeholder {
+    font-size: 1.2em;
+    font-family: 'open sans', sans-serif;
+}
+
+.contact input[type=text] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--pink);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+.contact select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--pink);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--pink);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+.contact input[type=submit] {
+    background-color: var(--pink);
+    font-family: 'open sans', sans-serif;
+    font-size: .9em;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: var(--light-blue);
+}
+
+/*--------DESKTOP VERSION---------------------*/
+
+@media screen and (min-width: 1000px) {
+    /* ---------------VERTICAL MENU---------------------------- */
+
+    #myNav {
+        display: block;
+    }
+
+    #underNav {
+        display: block;
+    }
+
+    #myNav ul {
+        list-style-type: none;
+        margin-bottom:
+            padding: 0;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    #myNav li {
+        display: inline;
+    }
+
+    #myNav li a {
+        display: inline-block;
+        color: black;
+        padding: 1vw;
+        margin-top: 1vw;
+        font-size: 1.4em;
+        font-family: "Quicksand", sans-serif;
+        text-decoration: none;
+    }
+
+    #myNav li a:hover {
+        display: inline-block;
+        color: var(--yellow);
+    }
+
+    #underNav ul {
+        list-style-type: none;
+        position: relative;
+        bottom: 4vw;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    #underNav li {
+        display: inline;
+    }
+
+    #underNav li p {
+        display: inline-block;
+        color: darkgrey;
+        padding-left: 1vw;
+        font-size: 1.2em;
+        font-family: "Oswald", sans-serif;
+        text-decoration: none;
+    }
+
+    #underNav li p:hover {
+        display: inline-block;
+        color: black;
+        font-size: 1.2em;
+        cursor: pointer;
+    }
+
+    /* ---------------CARD PRODUCTS---------------------------- */
+    #cart_style .container {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 13vw;
+        font-size: 0.9em;
+        position: relative;
+
+    }
+
+    #cart_style img {
+
+        width: 14vw;
+        position: relative;
+        float: left;
+        padding-right: 1vw;
+
+    }
+
+    #cart_style img:hover {
+
+        width: 14vw;
+        position: relative;
+        float: left;
+        padding-right: 1vw;
+        opacity: 1;
+
+    }
+
+    #form_content {
+        margin-left: 13vw;
+        margin-right: 13vw;
+
+    }
+
+    #form_content h2 {
+        font-family: sans-serif;
+    }
+
+    form {
+        font-family: sans-serif;
+        padding-bottom: 1vw;
+    }
+
+    input[type="text"] {
+        width: 30vw;
+        height: 3vw;
+        margin-bottom: 1vw;
+        margin-top: 1vw;
+    }
+
+    /* --------------- BANNER ------------------------ */
+
+    .banner_1 {
+        width: 100vw;
+        height: 0.5vw;
+        background-color: black;
+        color: var(--yellow);
+        text-align: center;
+        position: relative;
+        padding-top: 1vw;
+        display: none;
+        margin: 0;
+        padding-bottom: 2vw;
+    }
+
+    .banner_2 {
+        width: 100vw;
+        height: 0.5vw;
+        background-color: black;
+        color: var(--pink);
+        text-align: center;
+        position: relative;
+        padding-top: 1vw;
+        display: none;
+        margin: 0;
+        padding-bottom: 2vw;
+    }
+
+    .banner_3 {
+        width: 100vw;
+        height: 0.5vw;
+        background-color: black;
+        color: var(--light-blue);
+        text-align: center;
+        position: relative;
+        padding-top: 1vw;
+        display: none;
+        margin: 0;
+        padding-bottom: 2vw;
+    }
+
+    /* --------------- PRODUCTS ---------------------- */
+
+    #template_id {
+
+        width: 35%;
+        text-align: center;
+        margin-top: 1vw;
+        font-size: .8em;
+        height: 2.6vw;
+        border: none;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 6vw;
+        font-size: 0.9em;
+    }
+
+    #template_img {
+        width: 95%;
+        cursor: pointer;
+    }
+
+    #template_img:hover {
+        width: 95%;
+        cursor: pointer;
+        opacity: .6;
+    }
+
+    #template_name {
+        font-size: 1.1em;
+        font-weight: bold;
+        font-family: "open sans", sans-serif;
+        padding-bottom: .5vw;
+    }
+
+    #template_price {
+        padding-bottom: .5vw;
+    }
+
+
+    /* --------------- HOME PAGE ---------------- */
+
+    .locologo img {
+
+        height: 3vw;
+        position: relative;
+        left: 3vw;
+        bottom: 4vw;
+        display: block;
+    }
+
+    .locologomini img {
+
+        display: none;
+    }
+
+
+    .content_home {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100vw;
+        text-align: center;
+    }
+
+
+    .content_home #billeder {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin-left: 16vw;
+        margin-right: 16vw;
+
+    }
+
+
+    .content_home img {
+
+        width: 30vw;
+    }
+
+    .content_home img:hover {
+
+        width: 30vw;
+        opacity: .6;
+    }
+
+    .content_home video {
+
+        width: 64%;
+        padding: 0;
+        margin-bottom: 5vw;
+    }
+
+
+    .box_4 {
+
+        width: 100vw;
+        background-color: var(--dark-blue);
+        max-height: 18vw;
+    }
+
+    .box_4 h2 {
+        color: var(--pink);
+        font-family: 'nosifer', sans-serif;
+        padding-top: 1vw;
+        font-size: 1.8em;
+    }
+
+    .box_4 p {
+        color: white;
+        font-family: 'open sans', sans-serif;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        padding-top: .1vw;
+        font-size: 1.3em;
+    }
+
+    .code {
+        color: var(--yellow);
+    }
+
+    .box_5 {
+        background-color: var(--red);
+        font-family: "open sans", sans-serif;
+        width: 100vw;
+        max-height: 18vw;
+
+    }
+
+    .box_5 h2 {
+        color: white;
+        font-family: "open sans", sans-serif;
+        font-weight: bold;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        font-size: 1.8em;
+
+    }
+
+    .box_5 p {
+        color: white;
+        font-family: "open sans", sans-serif;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        font-size: 1.3em;
+    }
+
+    /* --------------- DROPDOWN MENU ----------------------------- */
+
+    .drop {
+        display: none;
+    }
+
+    .dropbtn {
+        background-color: white;
+        font-weight: bold;
+        color: black;
+        padding: 18px;
+        font-size: 2.5em;
+        border: none;
+        cursor: pointer;
+        font-family: "nosifer", cursive;
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+
+    .dropdown {
+        position: relative;
+        text-align: center;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+
+    .dropbtn {
+        display: none;
+    }
+
+    .cart,
+    #cart-number {
+        width: 5vw;
+        height: 5vw;
+        right: 4vw;
+        top: 2vw;
+    }
+
+    #cart-number {
+
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        top: 5vw;
+        right: 7vw;
+        width: 30px;
+        height: 30px;
+        background: black;
+        border-radius: 100%;
+        font-family: sans-serif;
+        color: white;
+    }
+
+    .product-item {
+        padding: 1vw;
+    }
+
+    /* --------------- FOOTER -------------------- */
+    .footer {
+
+        width: 100vw;
+        height: 100%;
+        position: relative;
+        background-color: black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+
+    }
+
+    .newsletter input[type=text] {
+        width: 18vw;
+        height: 2vw;
+
+    }
+
+    .footer_box p {
+        color: white;
+        padding: .4vw;
+        font-weight: bold;
+    }
+
+    .footer_box .news {
+        color: white;
+        padding: .3vw;
+        font-weight: normal;
+    }
+
+
+    .footer_box img {
+        width: 2.5vw;
+        left: 12vw;
+        padding: .5vw;
+        position: relative;
+    }
+
+    .newsletter input[type=submit] {
+        background-color: var(--pink);
+        font-family: 'open sans', sans-serif;
+        font-size: .9em;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+
+    }
+
+    .signature img {
+        width: 60%;
+        position: relative;
+        bottom: 4vw;
+        left: 7vw;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    input[type=submit]:hover {
+        background-color: var(--light-blue);
+    }
+
+    /* ---------------SINGLEVIEW---------------------------- */
+
+    #single {
+        margin: 22vw;
+        margin-top: -5vw;
+        margin-bottom: 10vw;
+    }
+
+    #single img {
+        width: 55vw;
+        margin-bottom: 1vw;
+        margin-top: 1vw;
+    }
+
+    #single img:hover {
+        width: 55vw;
+        margin-bottom: 1vw;
+        margin-top: 1vw;
+        opacity: 1;
+    }
+
+
+    #single #template_price {
+        font-weight: bold;
+        font-size: 1.2em;
+        color: var(--pink);
+    }
+
+    #single #template_name {
+        font-size: 1.3em;
+    }
+
+    #single #template_colour {
+        font-size: 1em;
+    }
+
+    #single #template_size {
+        font-size: 1em;
+    }
+
+    #template_desc {
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        line-height: 2.5vw;
+    }
+
+    /* ---------------VIDEO---------------------------- */
+
+    .content {
+        padding: 2vw;
+        margin-bottom: 15vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .content iframe {
+        width: 40vw;
+        height: 80%;
+        margin-top: 1vw;
+
+    }
+
+    .content #beskrivelse {
+
+        margin: 5vw;
+        line-height: 2vw;
+    }
+
+    .content h2 {
+
+        font-family: 'open sans', sans-serif;
+    }
+
+
+    /* ---------------CONTACT---------------------------- */
+
+    .contact {
+        padding: 10vw;
+        padding-top: 7vw;
+        padding-left: 33vw;
+        font-family: 'open sans', sans-serif;
+    }
+
+    .contact input:placeholder {
+        font-size: 1.1em;
+        font-family: 'open sans', sans-serif;
+    }
+
+    .contact select {
+        font-size: .7em;
+        font-family: 'open sans', sans-serif;
+    }
+
+    .contact textarea::placeholder {
+        font-size: 1.2em;
+        font-family: 'open sans', sans-serif;
+    }
+
+    .contact input[type=text] {
+        width: 60%;
+        padding: 10px;
+        border: 2px solid var(--pink);
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+    }
+
+    .contact select {
+        width: 60%;
+        padding: 10px;
+        border: 2px solid var(--pink);
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+    }
+
+    .contact textarea {
+        width: 60%;
+        padding: 10px;
+        border: 2px solid var(--pink);
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical
+    }
+
+    .contact input[type=submit] {
+        background-color: var(--pink);
+        font-family: 'open sans', sans-serif;
+        font-size: .9em;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: var(--light-blue);
+    }
+
+    /* --------------- CART PAGE ----------------------------- */
+
+    .form_content {
+        padding-left: 33vw;
+        font-family: 'open sans', sans-serif;
+        margin-bottom: 2vw;
+    }
+
+    .form_content input::placeholder {
+        font-size: 1.1em;
+        font-family: 'open sans', sans-serif;
+    }
+
+    .form_content select {
+        font-size: .7em;
+        font-family: 'open sans', sans-serif;
+    }
+
+    .form_content textarea::placeholder {
+        font-size: 1.2em;
+        font-family: 'open sans', sans-serif;
+    }
+
+    .form_content input[type=text] {
+        width: 60%;
+        padding: 10px;
+        border: 2px solid var(--pink);
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+    }
+
+    .form_content select {
+        width: 60%;
+        padding: 10px;
+        border: 2px solid var(--pink);
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+    }
+
+    .form_content textarea {
+        width: 60%;
+        padding: 10px;
+        border: 2px solid var(--pink);
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical
+    }
+
+    .form_content input[type=submit] {
+        background-color: var(--pink);
+        font-family: 'open sans', sans-serif;
+        font-size: .9em;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+}
