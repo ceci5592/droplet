@@ -439,7 +439,7 @@ input[type="text"] {
     position: relative;
     background-color: black;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     padding-top: 2vw;
     padding-bottom: 4vw;
 
@@ -987,7 +987,7 @@ input[type=submit]:hover {
     }
 
     /* --------------- FOOTER -------------------- */
-    .footer {
+    .footer_box {
 
         width: 100vw;
         height: 100%;
